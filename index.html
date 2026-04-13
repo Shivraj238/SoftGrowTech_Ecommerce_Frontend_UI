@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeStore | Premium Purple Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <h1 class="logo">Vibe<span>Store</span></h1>
+            </div>
+            
+            <div class="nav-center">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-icons">
+                    <i class="fas fa-user user-icon"></i>
+                    <div class="cart-container">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span id="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="filter-bar">
+            <button onclick="filterProducts('all')" id="btn-all" class="filter-btn active">All Products</button>
+            <button onclick="filterProducts('electronics')" class="filter-btn">Electronics</button>
+            <button onclick="filterProducts('fashion')" class="filter-btn">Fashion</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>The Purple & Gold Collection</h2>
+            <p>Premium quality meets aesthetic design. Shop the new season arrivals below.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div id="product-grid" class="product-grid">
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
